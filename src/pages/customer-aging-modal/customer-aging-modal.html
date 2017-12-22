@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">Close</button>
+    </ion-buttons>
+    <ion-title>Customer Wise Sales Report</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list *ngFor="let item of data" style="color:black;font-size:0.7em;" no-lines>
+      {{ item.CustomerTitle }}&nbsp;{{ item.TownTitle }}&nbsp;{{ item.ItemTitle }}
+    </ion-list>
+</ion-content>

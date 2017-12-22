@@ -1,5 +1,8 @@
 {
   "name": "hostachem",
-  "app_id": "",
-  "type": "ionic-angular"
+  "app_id": "d1aa8bc7",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Customer Aging</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list inset>
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+            <ion-item  style="border: 1px solid #c9da2e;">
+              <ion-datetime placeholder="From Date" displayFormat="DD/MM/YYYY" name="date1" type="date" required [(ngModel)]="user.date1"></ion-datetime>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+            <ion-item  style="border: 1px solid #c9da2e;">
+              <ion-datetime placeholder="To Date" displayFormat="DD/MM/YYYY" name="date2" type="date" required [(ngModel)]="user.date2"></ion-datetime>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <button style="background-color: #c9da2e; color: black" (click)="getStock(user)" ion-button class="submit-btn" full type="submit" >View Report
+          </button>
+        </ion-col>
+      </ion-row>
+  </ion-list>
+</ion-content>

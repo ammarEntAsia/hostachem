@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>signup</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <img src="assets/img/logo.png"/>
+  <form #loginForm="ngForm" (ngSubmit)="signup()" autocomplete="off">
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <ion-item  style="border: 1px solid #c9da2e;">
+            <ion-input placeholder="Email" name="username" id="loginField" type="email" required [(ngModel)]="username" #email></ion-input>
+          </ion-item>
+          <ion-item  style="border: 1px solid #c9da2e;">
+            <ion-input placeholder="Password" name="password" id="passwordField" type="password" required [(ngModel)]="password"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+        <button style="background-color: #c9da2e; color: black" ion-button class="submit-btn" full type="submit" >Signup
+        </button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

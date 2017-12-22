@@ -1,0 +1,22 @@
+<ion-content text-center padding>
+  <img class="zoomed" src="assets/img/logo.png"/>
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <ion-item style="border: 1px solid #c9da2e;">
+            <ion-input placeholder="Email" name="username" id="loginField" type="text" required [(ngModel)]="user.email" #email></ion-input>
+          </ion-item>
+          <ion-item style="border: 1px solid #c9da2e;">
+            <ion-input placeholder="Password" name="password" id="passwordField" type="password" required [(ngModel)]="user.password"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button style="background-color: #c9da2e; color: black" ion-button class="submit-btn" full (click)="login(user)" >Login
+        </button>
+      </ion-col>
+    </ion-row>
+    <button ion-button full small style="background-color: #ccda2ee5; color: black;" (click)="register(user)" >Register</button>
+</ion-content>
