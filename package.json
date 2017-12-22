@@ -1,7 +1,7 @@
 {
     "name": "hostachem",
     "version": "0.0.1",
-    "author": "Ionic Framework",
+    "author": "Ammar Ahmed",
     "homepage": "http://ionicframework.com/",
     "private": true,
     "scripts": {
@@ -48,7 +48,7 @@
         "@ionic/app-scripts": "2.1.4",
         "typescript": "2.3.4"
     },
-    "description": "An Ionic project",
+    "description": "AN ONLINE RPORTING APP",
     "cordova": {
         "plugins": {
             "cordova-plugin-console": {},
